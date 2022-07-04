@@ -13,11 +13,15 @@ private enum StoryboardKeyValue {
 }
 
 class HomeViewController: UIViewController {    
+    @IBOutlet private weak var registratedValueLabel: UILabel!
+
     @IBAction private func showRegistValueVC(_ sender: Any) {
         let registValueVC = UIStoryboard(name: StoryboardKeyValue.name, bundle: nil).instantiateViewController(withIdentifier: StoryboardKeyValue.id) as! RegistValueViewController
 
+        registValueVC.completion = { self.registratedValueLabel.text = $0 }
         navigationController?.pushViewController(registValueVC, animated: true)
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
