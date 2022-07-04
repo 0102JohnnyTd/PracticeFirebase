@@ -8,16 +8,8 @@
 import UIKit
 
 class ValueListTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet private weak var savedValueLabel: UILabel!
+    func configure(saveValue: String) {
+        savedValueLabel.text = saveValue
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

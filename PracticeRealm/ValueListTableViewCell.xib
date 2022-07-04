@@ -20,19 +20,23 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="SSJ-iS-peR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="R4C-Et-Ja4"/>
                 <constraint firstAttribute="bottom" secondItem="SSJ-iS-peR" secondAttribute="bottom" constant="16" id="gGD-Pk-h2A"/>
                 <constraint firstItem="SSJ-iS-peR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ig3-F2-U7u"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="SavedValueLabel" destination="SSJ-iS-peR" id="HpU-2K-hM6"/>
+                <outlet property="savedValueLabel" destination="SSJ-iS-peR" id="6ci-67-h7W"/>
+            </connections>
             <point key="canvasLocation" x="132" y="87"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

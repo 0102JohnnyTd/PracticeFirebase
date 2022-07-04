@@ -33,6 +33,10 @@ extension ValueListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        valueListTableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ValueListTableViewCell
+        let cell = valueListTableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ValueListTableViewCell
+
+        cell.configure(saveValue: sampleArray[indexPath.row])
+
+        return cell
     }
 }
