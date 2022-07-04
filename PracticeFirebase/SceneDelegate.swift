@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  PracticeRealm
+//  PracticeFirebase
 //
 //  Created by Johnny Toda on 2022/07/03.
 //
