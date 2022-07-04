@@ -7,7 +7,17 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+private enum StoryboardKeyValue {
+    static let name = "RegistValue"
+    static let id = "storyboardID"
+}
+
+class HomeViewController: UIViewController {    
+    @IBAction private func showRegistValueVC(_ sender: Any) {
+        let registValueVC = UIStoryboard(name: StoryboardKeyValue.name, bundle: nil).instantiateViewController(withIdentifier: StoryboardKeyValue.id) as! RegistValueViewController
+
+        navigationController?.pushViewController(registValueVC, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
