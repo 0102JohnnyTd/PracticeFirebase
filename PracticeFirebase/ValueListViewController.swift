@@ -35,7 +35,7 @@ extension ValueListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = valueListTableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ValueListTableViewCell
 
-        cell.configure(saveValue: sampleArray[indexPath.row])
+        cell.configure(savedValue: sampleArray[indexPath.row])
 
         return cell
     }

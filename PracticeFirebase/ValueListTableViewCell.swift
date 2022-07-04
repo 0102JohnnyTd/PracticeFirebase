@@ -9,7 +9,7 @@ import UIKit
 
 class ValueListTableViewCell: UITableViewCell {
     @IBOutlet private weak var savedValueLabel: UILabel!
-    func configure(saveValue: String) {
-        savedValueLabel.text = saveValue
+    func configure(savedValue: String) {
+        savedValueLabel.text = savedValue
     }
 }
