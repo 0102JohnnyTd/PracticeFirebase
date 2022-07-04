@@ -8,22 +8,31 @@
 import UIKit
 
 class ValueListViewController: UIViewController {
+    @IBOutlet private weak var valueListTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        valueListTableView.delegate = self
+        valueListTableView.dataSource = self
+        registrateXibFile()
     }
-    
 
-    /*
-    // MARK: - Navigation
+    private let nib = "ValueListTableViewCell"
+    private let cellID = "CellID"
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func registrateXibFile() {
+        valueListTableView.register(UINib(nibName: nib, bundle: nil), forCellReuseIdentifier: cellID)
     }
-    */
 
+    private let sampleArray = ["a", "b", "c", "d", "e", "f"]
+}
+
+extension ValueListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        sampleArray.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        valueListTableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ValueListTableViewCell
+    }
 }

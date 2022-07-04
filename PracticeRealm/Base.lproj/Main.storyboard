@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tam-8o-DDb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="U0f-vJ-EGn">
-                                <rect key="frame" x="16" y="60" width="382" height="322.5"/>
+                                <rect key="frame" x="16" y="104" width="382" height="322.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存する値を入力" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSs-NC-TU0" userLabel="Description Label">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
@@ -52,10 +52,45 @@
                             <constraint firstItem="U0f-vJ-EGn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Xw5-75-rYl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cDG-Li-a4q">
+                        <barButtonItem key="rightBarButtonItem" title="保存された値" id="RAs-np-Ydh">
+                            <connections>
+                                <segue destination="y2b-6h-1ur" kind="show" id="eVX-lC-idO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="58"/>
+            <point key="canvasLocation" x="939.13043478260875" y="57.589285714285708"/>
+        </scene>
+        <!--ValueList-->
+        <scene sceneID="v70-2m-L8G">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ValueList" id="y2b-6h-1ur" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tER-M0-Aip"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1J-dC-hFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="-198"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WGG-RT-gEI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tam-8o-DDb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGD-r1-5YM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pPV-40-VMH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWt-XD-Q1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="57.589285714285708"/>
         </scene>
     </scenes>
     <resources>
