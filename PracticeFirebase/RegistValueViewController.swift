@@ -13,6 +13,7 @@ class RegistValueViewController: UIViewController {
         completion?(valueTextView.text)
         navigationController?.popViewController(animated: true)
     }
+    
     var completion: ((String) -> Void)?
 
     override func viewDidLoad() {
