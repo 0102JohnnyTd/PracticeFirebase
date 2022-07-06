@@ -11,3 +11,4 @@ disabled_rules:
   - vertical_whitespace
   - line_length
   - force_cast
+  - type_name
