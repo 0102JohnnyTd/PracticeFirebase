@@ -7,6 +7,7 @@ target 'PracticeFirebase' do
 
   # Pods for PracticeFirebase
 pod 'FirebaseAuth'
+pod 'GoogleSignIn', '~> 6.2.2' 
 pod 'FirebaseFirestore'
 
 
