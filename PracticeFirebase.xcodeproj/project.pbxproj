@@ -101,7 +101,6 @@
 				D63A394B69603957488DE74D /* Pods-PracticeFirebase.debug.xcconfig */,
 				79489D212143C65AE4246291 /* Pods-PracticeFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
