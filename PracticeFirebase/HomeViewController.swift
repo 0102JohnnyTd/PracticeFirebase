@@ -12,7 +12,7 @@ private enum StoryboardKeyValue {
     static let id = "storyboardID"
 }
 
-class HomeViewController: UIViewController {    
+class HomeViewController: UIViewController {
     @IBOutlet private weak var registratedValueLabel: UILabel!
 
     @IBAction private func showRegistValueVC(_ sender: Any) {
@@ -24,5 +24,5 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }   
+    }
 }

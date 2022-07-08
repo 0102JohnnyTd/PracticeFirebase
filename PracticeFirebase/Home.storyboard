@@ -44,7 +44,13 @@
                             <constraint firstItem="2NU-FI-S0A" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="wwH-Ra-vgL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XuX-6W-Vca"/>
+                    <navigationItem key="navigationItem" id="XuX-6W-Vca">
+                        <barButtonItem key="rightBarButtonItem" title="ログイン" id="c2E-r7-Xif">
+                            <connections>
+                                <segue destination="ZRC-0w-XU2" kind="presentation" id="Avb-lC-nQ2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="registratedValueLabel" destination="Vyu-Eo-ucC" id="QTk-6J-A7w"/>
                     </connections>
@@ -52,6 +58,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="51.5625"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="acJ-CO-c3V">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="ZRC-0w-XU2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKi-N5-7oH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="-146"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Ph-hA-wuk">
