@@ -6,9 +6,7 @@ target 'PracticeFirebase' do
   use_frameworks!
 
   # Pods for PracticeFirebase
-pod 'FirebaseAuth'
-pod 'GoogleSignIn', '~> 6.2.2' 
-pod 'FirebaseFirestore'
+pod 'FirebaseUI'
 
 
 end
