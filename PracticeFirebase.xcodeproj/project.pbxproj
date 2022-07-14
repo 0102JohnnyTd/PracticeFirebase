@@ -21,10 +21,10 @@
 		1C3D231D2872D4D700C05D77 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D231C2872D4D700C05D77 /* Home.storyboard */; };
 		1C3D231F2872D5C200C05D77 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D231E2872D5C200C05D77 /* HomeViewController.swift */; };
 		1C3D23212872F43400C05D77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D23202872F43400C05D77 /* GoogleService-Info.plist */; };
-		1CC96646287FAEC200002BBA /* UserDetailsTabViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC96645287FAEC200002BBA /* UserDetailsTabViewHeaderView.xib */; };
+		1CC96646287FAEC200002BBA /* UserDetailsTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC96645287FAEC200002BBA /* UserDetailsTableViewHeaderView.xib */; };
 		1CC96648287FAEE300002BBA /* UserLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC96647287FAEE300002BBA /* UserLoginState.swift */; };
 		1CC9664A287FAF2B00002BBA /* UserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC96649287FAF2B00002BBA /* UserDetailsTableViewCell.swift */; };
-		1CC9664C287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9664B287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift */; };
+		1CC9664C287FFFAA00002BBA /* UserDetailsTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9664B287FFFAA00002BBA /* UserDetailsTableViewHeaderView.swift */; };
 		1CC9664E288006DF00002BBA /* UserDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC9664D288006DF00002BBA /* UserDetailsTableViewCell.xib */; };
 		1CC96650288007AC00002BBA /* UserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC9664F288007AC00002BBA /* UserDetails.storyboard */; };
 		1CC96652288007BD00002BBA /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC96651288007BD00002BBA /* UserDetailsViewController.swift */; };
@@ -47,10 +47,10 @@
 		1C3D231E2872D5C200C05D77 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C3D23202872F43400C05D77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../My Mac (todaryoumanoMBP)/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1C3D23792878650400C05D77 /* PracticeFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PracticeFirebase.entitlements; sourceTree = "<group>"; };
-		1CC96645287FAEC200002BBA /* UserDetailsTabViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTabViewHeaderView.xib; sourceTree = "<group>"; };
+		1CC96645287FAEC200002BBA /* UserDetailsTableViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTableViewHeaderView.xib; sourceTree = "<group>"; };
 		1CC96647287FAEE300002BBA /* UserLoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginState.swift; sourceTree = "<group>"; };
 		1CC96649287FAF2B00002BBA /* UserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewCell.swift; sourceTree = "<group>"; };
-		1CC9664B287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTabViewHeaderView.swift; sourceTree = "<group>"; };
+		1CC9664B287FFFAA00002BBA /* UserDetailsTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewHeaderView.swift; sourceTree = "<group>"; };
 		1CC9664D288006DF00002BBA /* UserDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		1CC9664F288007AC00002BBA /* UserDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetails.storyboard; sourceTree = "<group>"; };
 		1CC96651288007BD00002BBA /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
@@ -96,13 +96,6 @@
 				1C3D22FB2871DBF000C05D77 /* AppDelegate.swift */,
 				1C3D22FD2871DBF000C05D77 /* SceneDelegate.swift */,
 				1C3D231E2872D5C200C05D77 /* HomeViewController.swift */,
-				1CC96647287FAEE300002BBA /* UserLoginState.swift */,
-				1CC9664B287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift */,
-				1CC96645287FAEC200002BBA /* UserDetailsTabViewHeaderView.xib */,
-				1CC9664F288007AC00002BBA /* UserDetails.storyboard */,
-				1CC96651288007BD00002BBA /* UserDetailsViewController.swift */,
-				1CC96649287FAF2B00002BBA /* UserDetailsTableViewCell.swift */,
-				1CC9664D288006DF00002BBA /* UserDetailsTableViewCell.xib */,
 				1C3D231C2872D4D700C05D77 /* Home.storyboard */,
 				1C3D22FF2871DBF000C05D77 /* RegistValueViewController.swift */,
 				1C3D23012871DBF000C05D77 /* RegistValue.storyboard */,
@@ -110,6 +103,13 @@
 				1C3D23102871E17100C05D77 /* ValueList.storyboard */,
 				1C3D231A2872753500C05D77 /* ValueListTableViewCell.swift */,
 				1C3D23182872748200C05D77 /* ValueListTableViewCell.xib */,
+				1CC96647287FAEE300002BBA /* UserLoginState.swift */,
+				1CC96651288007BD00002BBA /* UserDetailsViewController.swift */,
+				1CC9664F288007AC00002BBA /* UserDetails.storyboard */,
+				1CC9664B287FFFAA00002BBA /* UserDetailsTableViewHeaderView.swift */,
+				1CC96645287FAEC200002BBA /* UserDetailsTableViewHeaderView.xib */,
+				1CC96649287FAF2B00002BBA /* UserDetailsTableViewCell.swift */,
+				1CC9664D288006DF00002BBA /* UserDetailsTableViewCell.xib */,
 				1C3D23042871DBF300C05D77 /* Assets.xcassets */,
 				1C3D23062871DBF300C05D77 /* LaunchScreen.storyboard */,
 				1C3D23092871DBF300C05D77 /* Info.plist */,
@@ -203,7 +203,7 @@
 				1C3D23052871DBF300C05D77 /* Assets.xcassets in Resources */,
 				1C3D231D2872D4D700C05D77 /* Home.storyboard in Resources */,
 				1C3D23032871DBF000C05D77 /* RegistValue.storyboard in Resources */,
-				1CC96646287FAEC200002BBA /* UserDetailsTabViewHeaderView.xib in Resources */,
+				1CC96646287FAEC200002BBA /* UserDetailsTableViewHeaderView.xib in Resources */,
 				1C3D23192872748200C05D77 /* ValueListTableViewCell.xib in Resources */,
 				1CC96650288007AC00002BBA /* UserDetails.storyboard in Resources */,
 				1C3D23212872F43400C05D77 /* GoogleService-Info.plist in Resources */,
@@ -299,7 +299,7 @@
 				1C3D23132871E18200C05D77 /* ValueListViewController.swift in Sources */,
 				1C3D23002871DBF000C05D77 /* RegistValueViewController.swift in Sources */,
 				1C3D22FC2871DBF000C05D77 /* AppDelegate.swift in Sources */,
-				1CC9664C287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift in Sources */,
+				1CC9664C287FFFAA00002BBA /* UserDetailsTableViewHeaderView.swift in Sources */,
 				1C3D22FE2871DBF000C05D77 /* SceneDelegate.swift in Sources */,
 				1C3D231B2872753500C05D77 /* ValueListTableViewCell.swift in Sources */,
 				1C3D231F2872D5C200C05D77 /* HomeViewController.swift in Sources */,
