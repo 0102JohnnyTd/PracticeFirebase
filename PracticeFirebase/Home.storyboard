@@ -47,7 +47,7 @@
                     <navigationItem key="navigationItem" id="XuX-6W-Vca">
                         <barButtonItem key="rightBarButtonItem" title="ログイン" id="c2E-r7-Xif">
                             <connections>
-                                <action selector="didTapLoginButton:" destination="Y6W-OH-hqX" id="nBA-LC-VXM"/>
+                                <action selector="didTapLoginButton:" destination="Y6W-OH-hqX" id="oFR-JK-C3n"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
