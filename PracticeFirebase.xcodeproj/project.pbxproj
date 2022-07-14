@@ -25,6 +25,7 @@
 		1CC96648287FAEE300002BBA /* UserLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC96647287FAEE300002BBA /* UserLoginState.swift */; };
 		1CC9664A287FAF2B00002BBA /* UserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC96649287FAF2B00002BBA /* UserDetailsTableViewCell.swift */; };
 		1CC9664C287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9664B287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift */; };
+		1CC9664E288006DF00002BBA /* UserDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC9664D288006DF00002BBA /* UserDetailsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		1CC96647287FAEE300002BBA /* UserLoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginState.swift; sourceTree = "<group>"; };
 		1CC96649287FAF2B00002BBA /* UserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		1CC9664B287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTabViewHeaderView.swift; sourceTree = "<group>"; };
+		1CC9664D288006DF00002BBA /* UserDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		711B997B5184B2E9C4C112E4 /* Pods_PracticeFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79489D212143C65AE4246291 /* Pods-PracticeFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeFirebase.release.xcconfig"; path = "Target Support Files/Pods-PracticeFirebase/Pods-PracticeFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		D63A394B69603957488DE74D /* Pods-PracticeFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeFirebase.debug.xcconfig"; path = "Target Support Files/Pods-PracticeFirebase/Pods-PracticeFirebase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				1CC9664B287FFFAA00002BBA /* UserDetailsTabViewHeaderView.swift */,
 				1CC96645287FAEC200002BBA /* UserDetailsTabViewHeaderView.xib */,
 				1CC96649287FAF2B00002BBA /* UserDetailsTableViewCell.swift */,
+				1CC9664D288006DF00002BBA /* UserDetailsTableViewCell.xib */,
 				1C3D231C2872D4D700C05D77 /* Home.storyboard */,
 				1C3D22FF2871DBF000C05D77 /* RegistValueViewController.swift */,
 				1C3D23012871DBF000C05D77 /* RegistValue.storyboard */,
@@ -190,6 +193,7 @@
 			files = (
 				1C3D23112871E17100C05D77 /* ValueList.storyboard in Resources */,
 				1C3D23082871DBF300C05D77 /* LaunchScreen.storyboard in Resources */,
+				1CC9664E288006DF00002BBA /* UserDetailsTableViewCell.xib in Resources */,
 				1C3D23052871DBF300C05D77 /* Assets.xcassets in Resources */,
 				1C3D231D2872D4D700C05D77 /* Home.storyboard in Resources */,
 				1C3D23032871DBF000C05D77 /* RegistValue.storyboard in Resources */,
