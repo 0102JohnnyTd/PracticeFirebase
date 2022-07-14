@@ -25,6 +25,8 @@ class HomeViewController: UIViewController {
         navigationController?.pushViewController(registValueVC, animated: true)
     }
 
+    private let userLoginState  = UserLoginState()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
