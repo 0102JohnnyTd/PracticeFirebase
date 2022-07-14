@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseOAuthUI
+import FirebaseGoogleAuthUI
 
 private enum StoryboardKeyValue {
     static let name = "RegistValue"
@@ -15,6 +17,7 @@ private enum StoryboardKeyValue {
 class HomeViewController: UIViewController {
     @IBOutlet private weak var registratedValueLabel: UILabel!
 
+    @IBOutlet private weak var loginButton: UIBarButtonItem!
     @IBAction private func showRegistValueVC(_ sender: Any) {
         let registValueVC = UIStoryboard(name: StoryboardKeyValue.name, bundle: nil).instantiateViewController(withIdentifier: StoryboardKeyValue.id) as! RegistValueViewController
 
