@@ -8,11 +8,13 @@
 import UIKit
 
 class UserDetailsTableViewCell: UITableViewCell {
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    @IBOutlet private weak var titleLabel: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    static let nib = UINib(nibName: String(describing: UserDetailsTableViewCell.self), bundle: nil)
+    static let identifier = String(describing: UserDetailsTableViewCell.self)
+
+    func configure(title: String?, textColor: UIColor) {
+        titleLabel.text = title
+        titleLabel.textColor = textColor
     }
 }
