@@ -27,13 +27,18 @@ class HomeViewController: UIViewController {
 
     @IBAction private func didTapLoginButton(_ sender: Any) {
         if Auth.auth().currentUser != nil {
-            showLogoutAlert()
+            showUserDetailsVC()
         } else {
             showAuthVC()
         }
     }
 
     private let userLoginState  = UserLoginState()
+
+    private func showUserDetailsVC() {
+        let userDetailsVC = UIStoryboard(name: UserDetailsViewController.storyboardName, bundle: nil).instantiateViewController(withIdentifier: UserDetailsViewController.identifier) as! UserDetailsViewController
+        navigationController?.pushViewController(userDetailsVC, animated: true)
+    }
 
     private func logout() {
         do {
