@@ -34,43 +34,28 @@ class HomeViewController: UIViewController {
     }
 
     private let userLoginState  = UserLoginState()
-
-    private func showUserDetailsVC() {
-        let userDetailsVC = UIStoryboard(name: UserDetailsViewController.storyboardName, bundle: nil).instantiateViewController(withIdentifier: UserDetailsViewController.identifier) as! UserDetailsViewController
-        navigationController?.pushViewController(userDetailsVC, animated: true)
-    }
-
-    private func logout() {
-        do {
-            try Auth.auth().signOut()
-            let didFinishLogoutAlert = UIAlertController(title: "ログアウト完了", message: "またログインしてね", preferredStyle: .alert)
-            didFinishLogoutAlert.addAction(UIAlertAction(title: "うい。", style: .default))
-            present(didFinishLogoutAlert, animated: true)
-            let title = userLoginState.checkIsLogin(isLogin: userLoginState.getStatus())
-            loginButton.title = title
-        } catch {
-            print(error)
-        }
-    }
-
-    private func showLogoutAlert() {
-            let logoutAlert = UIAlertController(title: "ログアウト", message: "ログアウトしますか？", preferredStyle: .alert)
-            logoutAlert.addAction(UIAlertAction(title: "キャンセル", style: .cancel, handler: nil))
-        logoutAlert.addAction(UIAlertAction(title: "ログアウト", style: .destructive, handler: { [self] _ in
-                logout()
-            }))
-
-            present(logoutAlert, animated: true, completion: nil)
-        }
-
     override func viewDidAppear(_ animated: Bool) {
-        if userLoginState.isLogin == false {
-            showAuthVC()
-        }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        let title = userLoginState.checkIsLogin(isLogin: userLoginState.getStatus())
+            loginButton.title = title
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        introduceAuthVC()
+    }
+
+    private func introduceAuthVC() {
+        if Auth.auth().currentUser == nil {
+            showAuthVC()
+        }
+    }
+
+    private func showUserDetailsVC() {
+        let userDetailsVC = UIStoryboard(name: UserDetailsViewController.storyboardName, bundle: nil).instantiateViewController(withIdentifier: UserDetailsViewController.identifier) as! UserDetailsViewController
+        navigationController?.pushViewController(userDetailsVC, animated: true)
     }
 }
 
