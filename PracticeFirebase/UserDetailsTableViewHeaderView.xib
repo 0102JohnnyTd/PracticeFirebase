@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserDetailsTableViewHeaderView" customModule="PracticeFirebase" customModuleProvider="target">
+        <view contentMode="scaleToFill" restorationIdentifier="UserDetailsTableViewHeaderView" id="iN0-l3-epB" customClass="UserDetailsTableViewHeaderView" customModule="PracticeFirebase" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -52,7 +52,6 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="emailLabel" destination="N4q-cY-tQk" id="fDG-fS-zVh"/>
-                <outlet property="mailAddressLabel" destination="N4q-cY-tQk" id="lpZ-3D-Mqs"/>
                 <outlet property="nameLabel" destination="0ps-HW-Ipy" id="hse-xg-BVn"/>
                 <outlet property="profileImageView" destination="oRI-0Q-zbT" id="glA-f0-L6k"/>
             </connections>

@@ -17,18 +17,18 @@ class UserDetailsTableViewHeaderView: UITableViewHeaderFooterView {
     static let nib = UINib(nibName: String(describing: UserDetailsTableViewHeaderView.self), bundle: nil)
     static let identifier = String(describing: UserDetailsTableViewHeaderView.self)
 
-    func configure(userInfomation: (String?, String?, URL?), height: CGFloat) {
-        if let name = userInfomation.0 {
+    func configure(profileInfomation: (String?, String?, URL?), height: CGFloat) {
+        if let name = profileInfomation.0 {
             nameLabel.text = name
         } else {
             nameLabel.text = "名前を表示できません"
         }
-        if let email = userInfomation.1 {
+        if let email = profileInfomation.1 {
             emailLabel.text = email
         } else {
             emailLabel.text = "アドレスを表示できません"
         }
-        if let url = userInfomation.2 {
+        if let url = profileInfomation.2 {
             fetchProfileImage(url: url)
         } else {
             profileImageView.image = UIImage(named: "user_icon")
